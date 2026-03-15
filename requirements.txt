@@ -1,0 +1,5 @@
+pip install python-dotenv
+pip install langchain
+pip install langgraph
+pip install langchain-mcp-adapters
+pip install langchain-openai
