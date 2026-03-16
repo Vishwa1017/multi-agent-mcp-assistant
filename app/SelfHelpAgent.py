@@ -2,7 +2,7 @@ from langchain_mcp_adapters.client import MultiServerMCPClient
 from langchain.agents import create_agent
 from langgraph.checkpoint.memory import InMemorySaver
 
-from config import BOOKS_MCP_URL, MODEL_NAME, SELF_HELP_BOOKS
+from .config import BOOKS_MCP_URL, MODEL_NAME, SELF_HELP_BOOKS
 
 
 async def build_books_agent():

@@ -2,7 +2,7 @@ from langchain_mcp_adapters.client import MultiServerMCPClient
 from langchain.agents import create_agent
 from langgraph.checkpoint.memory import InMemorySaver
 
-from config import BOOKS_MCP_URL, MODEL_NAME, SDE_BOOKS
+from .config import BOOKS_MCP_URL, MODEL_NAME, SDE_BOOKS
 
 
 async def build_sde_agent():
