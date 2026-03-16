@@ -2,7 +2,7 @@ from langchain_mcp_adapters.client import MultiServerMCPClient
 from langchain.agents import create_agent
 from langgraph.checkpoint.memory import InMemorySaver
 
-from app.config import BOOKS_MCP_URL, MODEL_NAME, BOOK_LIST
+from config import BOOKS_MCP_URL, MODEL_NAME, SELF_HELP_BOOKS
 
 
 async def build_books_agent():
@@ -17,7 +17,7 @@ async def build_books_agent():
 
     tools = await client.get_tools()
 
-    books_text = ", ".join(BOOK_LIST)
+    books_text = ", ".join(SELF_HELP_BOOKS)
 
     system_prompt = f"""
 You are a helpful book assistant.
